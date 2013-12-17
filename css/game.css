@@ -1,0 +1,29 @@
+#canvas_container
+{
+	position: relative;
+}
+
+canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+}
+
+	#bg_canvas
+	{
+		z-index: 2;
+		background: #ccc;
+	}
+
+	#game_canvas
+	{
+		z-index: 3;
+	}
+
+	#debug_canvas
+	{
+		display: none;
+		z-index: 4;
+	}
