@@ -159,7 +159,6 @@ function Item(options)
 			if(item.pickup())
 			{
 				items.splice(i,1);	//Item picked up, remove from pool
-				continue;
 			}
 		}
 
@@ -287,7 +286,7 @@ function Actor(name) {
 		this.spriteSheet = new createjs.SpriteSheet(this.spriteData);
 		
 		createjs.SpriteSheetUtils.addFlippedFrames(this.spriteSheet, true, false, false);	//Flip frames horizontally
-		this.skin = new createjs.BitmapAnimation(this.spriteSheet);	
+		this.skin = new createjs.Sprite(this.spriteSheet);	
 			
 		this.skin.x = this.initPos.x;
 		this.skin.y = this.initPos.y;

@@ -1,7 +1,3 @@
-
-
-
-
 //Preload images			
 var queue = new createjs.LoadQueue(true);
 	queue.loadManifest([
@@ -33,6 +29,7 @@ function startGame() {
 
 	camera = new Camera({ followed: player.skin });
 	level.update();
+	
 	
 //	var vihu = new Enemy({ initPos: [ 400, 200] });	
 
